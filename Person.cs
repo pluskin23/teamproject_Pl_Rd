@@ -11,6 +11,13 @@ namespace teamProject_Pilipchuk_Radkevich
         private string Name { get; set; }
         private string Surname { get; set; }
         private System.DateTime DateTime { get; set; }
+        public void SetDateTime(DateTime date) { 
+            this.DateTime = date;
+        }
+        public DateTime GetDateTime()
+        {
+            return this.DateTime;   
+        }
 
         public Person (string name, string surname, DateTime date)
         {
@@ -23,6 +30,15 @@ namespace teamProject_Pilipchuk_Radkevich
             this.Name = "Man";
             this.Surname = "Manov";
             this.DateTime = DateTime.Today;
+        }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+        public string ToShortString()
+        {
+            string s = Name.ToString() + Surname.ToString();
+            return s;
         }
     }
 }
