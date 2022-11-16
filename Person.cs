@@ -18,5 +18,11 @@ namespace teamProject_Pilipchuk_Radkevich
             this.Surname = surname;
             this.DateTime = date;
         }
+        public Person ()
+        {
+            this.Name = "Man";
+            this.Surname = "Manov";
+            this.DateTime = DateTime.Today;
+        }
     }
 }
