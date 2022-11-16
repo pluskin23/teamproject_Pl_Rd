@@ -33,7 +33,8 @@ namespace teamProject_Pilipchuk_Radkevich
         }
         public override string ToString()
         {
-            return base.ToString();
+            string s = this.Name + " " + this.Surname + " " + this.DateTime;
+            return s;
         }
         public string ToShortString()
         {

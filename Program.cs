@@ -10,7 +10,11 @@ namespace teamProject_Pilipchuk_Radkevich
     {
         static void Main(string[] args)
         {
-
+            const int nrow = 10;
+            const int ncol = 10;
+            int[] arr1 = new int[nrow * ncol];
+            int[][] arr2 = new int [nrow][];
+            int[][] arr3 = new int [nrow * ncol][];
         }
     }
 }
